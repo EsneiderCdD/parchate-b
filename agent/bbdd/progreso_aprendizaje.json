@@ -1,0 +1,103 @@
+{
+  "documento": 6,
+  "tipo": "progreso_aprendizaje_mongodb",
+  "fecha_ultima_actualizacion": "2025-09-10",
+  "momentos_completados": [
+    {
+      "numero": 1,
+      "nombre": "Modelar",
+      "estado": "parcial",
+      "evidencia": "Colecciones events y creators creadas con referencia creatorId",
+      "pendiente": ["users", "requests"]
+    },
+    {
+      "numero": 4,
+      "nombre": "Rendimiento",
+      "estado": "parcial",
+      "evidencia": "Índices creados en events (channel, startDate) y verificados con explain()",
+      "pendiente": ["índices en creators, users, requests"]
+    },
+    {
+      "numero": 6,
+      "nombre": "Validar",
+      "estado": "completado_parcial",
+      "evidencia": "JSON Schema aplicado a events con collMod",
+      "pendiente": ["required en fields obligatorios", "validación en creators, users, requests"]
+    }
+  ],
+  "momentos_no_iniciados": [
+    {
+      "numero": 2,
+      "nombre": "Consultar",
+      "notas": "Pendiente de practicar consultas reales del proyecto"
+    },
+    {
+      "numero": 3,
+      "nombre": "Tiempo",
+      "notas": "Conocimiento básico de Date, pendiente rangos temporales y zonas horarias"
+    },
+    {
+      "numero": 5,
+      "nombre": "Agregar",
+      "notas": "No iniciado"
+    },
+    {
+      "numero": 7,
+      "nombre": "Administrar",
+      "notas": "No iniciado - Atlas"
+    },
+    {
+      "numero": 8,
+      "nombre": "Proteger",
+      "notas": "No iniciado"
+    },
+    {
+      "numero": 9,
+      "nombre": "Recuperar",
+      "notas": "No iniciado"
+    },
+    {
+      "numero": 10,
+      "nombre": "Observar",
+      "notas": "No iniciado"
+    },
+    {
+      "numero": 11,
+      "nombre": "Dimensionar",
+      "notas": "No iniciado"
+    },
+    {
+      "numero": 12,
+      "nombre": "Evolucionar",
+      "notas": "No iniciado"
+    }
+  ],
+  "habilidades_consolidadas": [
+    "CRUD básico (insertOne, insertMany, updateOne, updateMany, deleteOne, deleteMany)",
+    "Operador $set para actualizar campos",
+    "Creación de colecciones con createCollection",
+    "Validación de esquema con collMod y $jsonSchema",
+    "Tipos de datos: ObjectId, String, Number, Date, Array, Boolean, null",
+    "Concepto de índices: createIndex, getIndexes, dropIndex",
+    "Uso de explain() para verificar rendimiento de consultas",
+    "Diferencia entre índice simple y compuesto",
+    "Referencias entre colecciones (creatorId)"
+  ],
+  "habilidades_en_desarrollo": [
+    "Consultas con filtros avanzados ($gte, $gt, $lt, $lte)",
+    "Ordenamiento y paginación (sort, limit)",
+    "Agregaciones básicas ($group, $match)",
+    "required en validación de esquema",
+    "Gestión de usuarios y roles en MongoDB"
+  ],
+  "proximos_pasos": [
+    "Practicar consultas reales del proyecto en mongosh",
+    "Completar validación con required en events",
+    "Crear colecciones users y requests",
+    "Aplicar validación a creators, users y requests"
+  ],
+  "momento_backend": {
+    "estado": "pendiente",
+    "notas": "Una vez completadas las consultas y validaciones, pasar a Node.js + Express"
+  }
+}

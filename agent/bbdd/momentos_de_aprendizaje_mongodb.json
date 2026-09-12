@@ -1,0 +1,181 @@
+{
+    "documento": 2,
+    "tipo": "momentos_de_aprendizaje_mongodb",
+    "momentos": [
+      {
+        "numero": 1,
+        "momento": "Modelar",
+        "que_debes_aprender": [
+          "Modelado documental",
+          "Referencias vs. documentos embebidos",
+          "Cardinalidad",
+          "Normalización y desnormalización"
+        ],
+        "que_debes_ser_capaz_de_hacer_en_este_proyecto": [
+          "Decidir cómo representar usuarios",
+          "Decidir cómo representar solicitudes",
+          "Decidir cómo representar eventos",
+          "Decidir cómo representar creadores",
+          "Decidir cómo representar categorías"
+        ]
+      },
+      {
+        "numero": 2,
+        "momento": "Consultar",
+        "que_debes_aprender": [
+          "Consultas avanzadas",
+          "Filtros",
+          "Operadores",
+          "Ordenamiento",
+          "Proyecciones",
+          "Paginación"
+        ],
+        "que_debes_ser_capaz_de_hacer_en_este_proyecto": [
+          "Resolver consultas de eventos de hoy",
+          "Resolver consultas de próximos eventos",
+          "Resolver consultas de eventos por categoría"
+        ]
+      },
+      {
+        "numero": 3,
+        "momento": "Tiempo",
+        "que_debes_aprender": [
+          "Date",
+          "UTC",
+          "Zonas horarias",
+          "Rangos temporales"
+        ],
+        "que_debes_ser_capaz_de_hacer_en_este_proyecto": [
+          "Mostrar correctamente en el calendario un evento publicado para una determinada hora"
+        ]
+      },
+      {
+        "numero": 4,
+        "momento": "Rendimiento",
+        "que_debes_aprender": [
+          "Índices",
+          "explain()",
+          "Costo de consultas",
+          "Patrones de acceso"
+        ],
+        "que_debes_ser_capaz_de_hacer_en_este_proyecto": [
+          "Diseñar índices según las consultas reales de la aplicación",
+          "Comprobar que los índices funcionan"
+        ]
+      },
+      {
+        "numero": 5,
+        "momento": "Agregar",
+        "que_debes_aprender": [
+          "Aggregation Pipeline",
+          "$match",
+          "$group",
+          "$sort",
+          "$lookup"
+        ],
+        "que_debes_ser_capaz_de_hacer_en_este_proyecto": [
+          "Obtener estadísticas",
+          "Obtener cantidades",
+          "Obtener eventos por categoría",
+          "Obtener información sobre actividad"
+        ]
+      },
+      {
+        "numero": 6,
+        "momento": "Validar",
+        "que_debes_aprender": [
+          "Validación de esquema",
+          "Tipos",
+          "Campos obligatorios",
+          "Restricciones"
+        ],
+        "que_debes_ser_capaz_de_hacer_en_este_proyecto": [
+          "Evitar que lleguen documentos inválidos aunque alguien manipule directamente la API"
+        ]
+      },
+      {
+        "numero": 7,
+        "momento": "Administrar",
+        "que_debes_aprender": [
+          "MongoDB Atlas",
+          "Usuarios de base de datos",
+          "Roles",
+          "Conexiones",
+          "Entornos"
+        ],
+        "que_debes_ser_capaz_de_hacer_en_este_proyecto": [
+          "Tener un entorno de desarrollo local separado del entorno de producción",
+          "Mantener una base de producción correctamente configurada"
+        ]
+      },
+      {
+        "numero": 8,
+        "momento": "Proteger",
+        "que_debes_aprender": [
+          "Autenticación de base de datos",
+          "Permisos",
+          "IP y Network Access",
+          "Secretos"
+        ],
+        "que_debes_ser_capaz_de_hacer_en_este_proyecto": [
+          "Impedir que cualquiera pueda conectarse directamente a MongoDB"
+        ]
+      },
+      {
+        "numero": 9,
+        "momento": "Recuperar",
+        "que_debes_aprender": [
+          "Backups",
+          "Restauración",
+          "Estrategia básica de recuperación"
+        ],
+        "que_debes_ser_capaz_de_hacer_en_este_proyecto": [
+          "Saber qué ocurre si se pierden datos",
+          "Saber qué ocurre si se comete un error"
+        ]
+      },
+      {
+        "numero": 10,
+        "momento": "Observar",
+        "que_debes_aprender": [
+          "Métricas",
+          "Conexiones",
+          "Operaciones",
+          "Almacenamiento",
+          "Logs"
+        ],
+        "que_debes_ser_capaz_de_hacer_en_este_proyecto": [
+          "Saber cómo está funcionando la base de datos cuando la aplicación está pública"
+        ]
+      },
+      {
+        "numero": 11,
+        "momento": "Dimensionar",
+        "que_debes_aprender": [
+          "Almacenamiento",
+          "Operaciones",
+          "Tráfico",
+          "Crecimiento"
+        ],
+        "que_debes_ser_capaz_de_hacer_en_este_proyecto": [
+          "Estimar qué ocurre con 1 mes de eventos",
+          "Estimar qué ocurre con 3 meses de eventos",
+          "Estimar qué ocurre con 6 meses de eventos",
+          "Estimar qué ocurre con 12 meses de eventos",
+          "Estimar el comportamiento ante distintos volúmenes de usuarios"
+        ]
+      },
+      {
+        "numero": 12,
+        "momento": "Evolucionar",
+        "que_debes_aprender": [
+          "Cambios de esquema",
+          "Migraciones",
+          "Compatibilidad"
+        ],
+        "que_debes_ser_capaz_de_hacer_en_este_proyecto": [
+          "Modificar el modelo sin destruir los datos existentes"
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,277 @@
+{
+    "documento": 1,
+    "tipo": "contexto_del_proyecto",
+    "proyecto": {
+      "descripcion": "Aplicación web pública orientada a la difusión, organización y descubrimiento de contenido y eventos relacionados con programación y tecnología.",
+      "proposito_principal": "Facilitar el descubrimiento de transmisiones, charlas, clases, eventos, sesiones prácticas, conferencias y contenido relacionado con desarrollo de software, organizándolos temporalmente.",
+      "concepto_central": "El tiempo y la organización temporal del contenido mediante un calendario.",
+      "unidad_principal": "evento",
+      "fuentes_de_contenido": [
+        "creadores",
+        "comunidades",
+        "organizadores",
+        "plataformas externas"
+      ],
+      "plataformas_externas": [
+        "YouTube",
+        "Twitch",
+        "otras plataformas"
+      ],
+      "objetivo_de_la_aplicacion": "Organizar información temporalmente y facilitar el descubrimiento de contenido y eventos tecnológicos.",
+      "alcance_temporal_inicial": {
+        "periodo": "aproximadamente un mes",
+        "posibles_ampliaciones": [
+          "tres meses",
+          "seis meses",
+          "un año"
+        ],
+        "motivos": [
+          "controlar la cantidad de información",
+          "mantener la viabilidad económica",
+          "probar consultas",
+          "probar filtros",
+          "probar ordenamiento",
+          "estudiar concurrencia",
+          "estudiar crecimiento",
+          "observar comportamiento real del sistema"
+        ]
+      }
+    },
+    "entidades": {
+      "eventos": {
+        "rol": "Unidad principal de información del sistema.",
+        "informacion_principal": [
+          "qué ocurrirá",
+          "cuándo ocurrirá",
+          "quién lo organiza o transmite",
+          "dónde puede acceder el usuario",
+          "estado dentro del calendario",
+          "categorías o tipos de contenido"
+        ]
+      },
+      "creadores_organizadores": {
+        "tipos": [
+          "creador",
+          "canal",
+          "comunidad",
+          "organizador"
+        ],
+        "rol": "Representar a las personas o grupos que producen el contenido mostrado en el calendario.",
+        "capacidades_futuras_posibles": [
+          "perfiles",
+          "estadísticas",
+          "gestión propia de eventos"
+        ]
+      },
+      "usuarios": {
+        "rol": "Personas que visitan e interactúan con la aplicación y eventualmente pueden enviar solicitudes."
+      },
+      "solicitudes": {
+        "rol": "Representar propuestas de publicación de eventos enviadas por personas interesadas.",
+        "flujo_inicial": [
+          "persona proporciona los datos necesarios",
+          "envía una solicitud",
+          "la solicitud es revisada",
+          "el administrador decide si se publica"
+        ],
+        "estados": [
+          "pendiente",
+          "aprobada",
+          "rechazada",
+          "modificada"
+        ]
+      }
+    },
+    "flujo_editorial": {
+      "principio": "Una solicitud no se convierte automáticamente en un evento público.",
+      "control": "El propietario o administrador conserva inicialmente el control editorial sobre el contenido publicado.",
+      "beneficios": [
+        "autorización",
+        "validación",
+        "seguridad",
+        "auditoría",
+        "control del flujo de información"
+      ]
+    },
+    "escala_inicial": {
+      "objetivo": "Producto pequeño pero real.",
+      "usuarios": "Volumen controlado inicialmente.",
+      "escenarios_futuros": [
+        "decenas de usuarios",
+        "cientos de usuarios",
+        "miles de usuarios"
+      ],
+      "dimensiones_a_estudiar": [
+        "solicitudes",
+        "almacenamiento",
+        "consultas",
+        "tráfico",
+        "comportamiento de infraestructura"
+      ]
+    },
+    "modelo_economico": {
+      "objetivo_inicial": "Mantener el producto público con un costo operativo muy reducido.",
+      "prioridad": "Demostrar que un producto público puede mantenerse con bajo costo y medir su crecimiento.",
+      "posibles_fuentes_de_ingresos": [
+        "publicidad",
+        "patrocinadores",
+        "promoción de determinados eventos",
+        "acuerdos con comunidades",
+        "mecanismos similares"
+      ],
+      "publicidad": {
+        "rol_inicial": "Posible fuente de sostenibilidad, no núcleo funcional.",
+        "condicion": "Incorporarla si existe suficiente tráfico e interés."
+      }
+    },
+    "stack_tecnologico": {
+      "frontend": "React + Vite",
+      "backend": "Node.js + Express",
+      "base_de_datos": "MongoDB",
+      "produccion_base_de_datos": "MongoDB Atlas",
+      "desarrollo_base_de_datos": "MongoDB local",
+      "principio": "Utilizar tecnologías conocidas como punto de partida y evaluar nuevas tecnologías solamente cuando problemas reales justifiquen su incorporación."
+    },
+    "responsabilidades_tecnicas": {
+      "frontend": [
+        "consumir información del backend",
+        "permitir descubrir eventos",
+        "permitir interactuar con los eventos"
+      ],
+      "backend": [
+        "gestionar comunicación entre usuarios y base de datos",
+        "aplicar reglas del sistema",
+        "validar información",
+        "controlar operaciones",
+        "proteger recursos"
+      ],
+      "base_de_datos": [
+        "persistir datos",
+        "permitir consultas eficientes",
+        "soportar las necesidades temporales del calendario"
+      ]
+    },
+    "produccion": {
+      "orientacion": "Producción desde el principio.",
+      "objetivo": "Aplicación accesible públicamente y desplegada en infraestructura real.",
+      "requisitos": [
+        "dominio",
+        "configuración de producción",
+        "variables de entorno",
+        "conexión segura con la base de datos",
+        "logs",
+        "monitoreo básico",
+        "estrategia razonable de recuperación de información"
+      ],
+      "principio_infraestructura": "Mantener la infraestructura proporcional al tamaño del producto y utilizar servicios económicos o gratuitos mientras sean suficientes."
+    },
+    "seguridad": {
+      "principio": "La seguridad es una característica del producto desde el inicio.",
+      "aspectos": [
+        "protección de credenciales",
+        "validación de entradas",
+        "control de acceso",
+        "autorización de operaciones administrativas",
+        "protección de la API",
+        "exposición mínima de información",
+        "manejo correcto de errores",
+        "reducción de abusos",
+        "desconfianza respecto a información proporcionada por usuarios externos"
+      ]
+    },
+    "testing": {
+      "principio": "La testeabilidad forma parte fundamental del proyecto.",
+      "objetivo": "Comprobar automáticamente que las operaciones principales funcionan y evitar que cambios posteriores rompan funcionalidades existentes.",
+      "evolucion": [
+        "validación de funciones",
+        "pruebas de endpoints",
+        "pruebas de integración",
+        "pruebas del comportamiento completo de la aplicación"
+      ],
+      "principio_de_calidad": "Las pruebas deben aportar confiabilidad y no acumularse artificialmente."
+    },
+    "arquitectura": {
+      "principio_inicial": "Arquitectura sencilla y comprensible.",
+      "evitar_inicialmente": [
+        "microservicios",
+        "infraestructura innecesariamente compleja"
+      ],
+      "objetivo": "Separar suficientemente las responsabilidades para permitir evolución futura.",
+      "capacidades_futuras_posibles": [
+        "autenticación",
+        "administración de eventos",
+        "perfiles de creadores",
+        "notificaciones",
+        "estadísticas",
+        "automatización"
+      ]
+    },
+    "limites_de_alcance": {
+      "no_es_inicialmente": [
+        "red social",
+        "plataforma de streaming",
+        "sistema completo de tickets",
+        "marketplace",
+        "plataforma educativa"
+      ],
+      "nucleo": "Descubrir eventos y contenido tecnológico organizados temporalmente, permitir que determinadas personas propongan nuevos eventos y administrar de manera controlada aquello que finalmente aparece publicado."
+    },
+    "proyecto_como_laboratorio": {
+      "proposito": "Laboratorio práctico de computación y desarrollo de software.",
+      "dimensiones_de_estudio": [
+        "almacenamiento de datos",
+        "modelado de datos",
+        "backend",
+        "frontend",
+        "arquitectura",
+        "infraestructura",
+        "nube",
+        "testing",
+        "seguridad",
+        "costos",
+        "operación",
+        "fundamentos de computación"
+      ],
+      "objetivo": "Comprender qué ocurre cuando una aplicación pasa de funcionar en un computador personal a convertirse en un servicio utilizado por personas externas."
+    },
+    "resultado_esperado": {
+      "tipo": "producto pequeño, público, funcional, mantenible, seguro y testeable",
+      "capacidades_que_deben_poder_explicarse": [
+        "cómo entra una solicitud de usuario",
+        "cómo se procesa",
+        "cómo se valida",
+        "cómo se almacena",
+        "cómo se convierte en información pública",
+        "cómo el frontend consume la información",
+        "cómo se despliega el sistema",
+        "cómo se monitorea",
+        "cuánto cuesta mantenerlo",
+        "qué cambia cuando aumenta el número de usuarios"
+      ]
+    },
+    "evolucion_futura": {
+      "posibilidades": [
+        "cuentas de usuario más completas",
+        "gestión autónoma de eventos",
+        "recurrencia",
+        "notificaciones",
+        "búsqueda avanzada",
+        "estadísticas",
+        "automatización",
+        "moderación",
+        "publicidad",
+        "patrocinadores",
+        "migraciones tecnológicas"
+      ],
+      "regla": "Construir primero el sistema pequeño, observar sus necesidades y utilizar esas necesidades como motivo para profundizar o introducir nuevas tecnologías."
+    },
+    "doble_proposito": {
+      "producto": "Pequeño producto digital que potencialmente puede convertirse en un servicio autosostenible.",
+      "aprendizaje": "Proyecto personal para desarrollar la capacidad de construir sistemas completos.",
+      "criterio_de_exito_inicial": [
+        "llevar una idea desde el modelo de datos hasta producción",
+        "comprender las capas que hacen posible el sistema",
+        "comprender su funcionamiento técnico de principio a fin"
+      ]
+    }
+  }

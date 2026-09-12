@@ -1,0 +1,187 @@
+{
+    "documento": 4,
+    "tipo": "perfil_de_conocimiento_mongodb",
+    "perfil": {
+      "rol": "Desarrollador autodidacta orientado principalmente al desarrollo web",
+      "experiencia_general": {
+        "tiempo_aproximado_aprendiendo_computacion": "2 a 2.5 años",
+        "enfoque_actual": [
+          "Frontend",
+          "Desarrollo web",
+          "Backend",
+          "Bases de datos"
+        ],
+        "objetivo": "Desarrollar la capacidad de construir, comprender, mantener y evolucionar sistemas completos."
+      },
+      "nivel_general_mongodb": "Fundamentos adquiridos, experiencia práctica inicial y conocimientos avanzados todavía por desarrollar",
+      "conocimientos_confirmados": {
+        "fundamentos": [
+          "Concepto de base de datos",
+          "Concepto de colección",
+          "Concepto de documento",
+          "Operaciones CRUD",
+          "Relación general entre aplicación y base de datos"
+        ],
+        "mongodb": [
+          "MongoDB local",
+          "MongoDB Shell",
+          "MongoDB Compass",
+          "Creación y utilización de bases de datos",
+          "Creación y utilización de colecciones",
+          "Trabajo con documentos",
+          "CRUD básico"
+        ],
+        "integracion_con_backend": [
+          "Conexión de Node.js con MongoDB",
+          "Uso de MongoDB dentro de un backend con Node.js",
+          "Uso de Express junto con el backend",
+          "Comunicación entre frontend, backend y base de datos"
+        ],
+        "bases_de_datos_generales": [
+          "Conceptos generales de bases de datos relacionales",
+          "Conceptos básicos de SQL"
+        ]
+      },
+      "experiencia_practica_actual": {
+        "proyecto_base": "Aplicación web pública de difusión, organización y descubrimiento de eventos y contenido tecnológico",
+        "experiencia_actual": [
+          "Ha trabajado con una base MongoDB sencilla",
+          "Ha trabajado con una colección",
+          "Ha almacenado documentos con diferentes tipos de datos",
+          "Ha realizado operaciones CRUD",
+          "Ha conectado MongoDB con Node.js",
+          "Ha utilizado el backend para exponer y manipular información de la base de datos",
+          "Ha consumido esa información desde el frontend"
+        ],
+        "objetivo_de_evolucion": "Transformar una experiencia CRUD básica en el diseño y operación de una base de datos utilizada por una aplicación pública real."
+      },
+      "herramientas_conocidas_o_disponibles": {
+        "mongodb_local": true,
+        "mongodb_shell": true,
+        "mongodb_compass": true,
+        "mongodb_atlas": "Será utilizado para producción",
+        "node_js": true,
+        "express": true,
+        "react": true,
+        "vite": true
+      },
+      "conceptos_que_no_deben_reexplicarse_desde_cero": [
+        "Qué es MongoDB",
+        "Qué es una base de datos",
+        "Qué es una colección",
+        "Qué es un documento",
+        "CRUD básico",
+        "Uso básico de MongoDB local",
+        "Uso básico de MongoDB Shell",
+        "Uso básico de MongoDB Compass",
+        "Conexión básica entre Node.js y MongoDB"
+      ],
+      "conocimientos_que_deben_reinterpretarse_desde_produccion": [
+        "Consultas",
+        "Modelo de datos",
+        "Rendimiento",
+        "Conexiones",
+        "Seguridad",
+        "Administración",
+        "Persistencia",
+        "Escalabilidad"
+      ],
+      "areas_por_desarrollar": {
+        "prioridad_alta": [
+          "Modelado documental",
+          "Referencias vs documentos embebidos",
+          "Cardinalidad",
+          "Normalización y desnormalización",
+          "Consultas avanzadas",
+          "Fechas y zonas horarias",
+          "Índices",
+          "Análisis de consultas con explain()",
+          "Validación de datos",
+          "MongoDB Atlas",
+          "Usuarios y roles",
+          "Seguridad de acceso a MongoDB"
+        ],
+        "prioridad_media": [
+          "Aggregation Pipeline",
+          "Backups",
+          "Restauración",
+          "Observabilidad",
+          "Métricas",
+          "Dimensionamiento",
+          "Estimación de almacenamiento y operaciones",
+          "Estrategias de evolución del esquema",
+          "Migraciones"
+        ],
+        "por_evaluar_segun_necesidad": [
+          "Características avanzadas de MongoDB que no tengan aplicación directa en el proyecto",
+          "Optimizaciones prematuras",
+          "Arquitecturas de base de datos innecesariamente complejas"
+        ]
+      },
+      "nivel_por_area": {
+        "fundamentos_mongodb": "básico_consolidado",
+        "crud": "básico_consolidado",
+        "consultas": "básico",
+        "modelado": "inicial",
+        "agregaciones": "por_desarrollar",
+        "fechas_y_tiempo": "por_desarrollar",
+        "indices": "por_desarrollar",
+        "rendimiento": "por_desarrollar",
+        "validacion": "por_desarrollar",
+        "atlas": "inicial_por_desarrollar",
+        "administracion": "por_desarrollar",
+        "seguridad": "por_desarrollar",
+        "backups": "por_desarrollar",
+        "observabilidad": "por_desarrollar",
+        "dimensionamiento": "por_desarrollar",
+        "evolucion_del_esquema": "por_desarrollar"
+      },
+      "fortalezas": [
+        "Ya ha utilizado MongoDB de forma práctica.",
+        "Comprende la relación entre frontend, backend y base de datos.",
+        "Tiene experiencia con Node.js y Express.",
+        "Tiene fundamentos de bases de datos relacionales y SQL.",
+        "Tiene interés particular en bases de datos.",
+        "Busca comprender cómo funciona un sistema real y no solamente ejecutar comandos.",
+        "Está dispuesto a estudiar documentación y experimentar antes de implementar.",
+        "Tiene interés en comprender rendimiento, producción, seguridad y costos."
+      ],
+      "limitaciones_actuales": [
+        "La experiencia actual con MongoDB está principalmente concentrada en CRUD y proyectos pequeños.",
+        "Todavía no ha recorrido de manera sistemática el ciclo completo de una base MongoDB en producción.",
+        "El modelado avanzado todavía debe desarrollarse mediante el proyecto.",
+        "La administración y operación de una base pública todavía forman parte del aprendizaje."
+      ],
+      "forma_preferida_de_aprendizaje": {
+        "principio": "Aprender mediante un proyecto real y observable.",
+        "preferencias": [
+          "Comprender primero el problema",
+          "Investigar documentación",
+          "Experimentar",
+          "Hacer preguntas",
+          "Tomar decisiones técnicas razonadas",
+          "Implementar posteriormente",
+          "Observar el resultado real"
+        ],
+        "evitar": [
+          "Tutoriales mecánicos sin contexto",
+          "Explicaciones repetitivas de fundamentos ya conocidos",
+          "Aprender características de MongoDB sin aplicación práctica",
+          "Introducir tecnologías por moda",
+          "Arquitecturas excesivamente complejas"
+        ]
+      },
+      "objetivo_de_aprendizaje_mongodb": {
+        "objetivo_corto_plazo": "Diseñar correctamente la base de datos de la aplicación de eventos tecnológicos.",
+        "objetivo_medio_plazo": "Ser capaz de operar MongoDB correctamente en una aplicación pública pequeña.",
+        "objetivo_largo_plazo": "Comprender el ciclo completo de una base de datos: modelado, consultas, tiempo, rendimiento, agregación, validación, administración, seguridad, recuperación, observabilidad, dimensionamiento y evolución.",
+        "criterio_de_dominio": "Poder explicar y defender las decisiones tomadas en la base de datos y modificarlas cuando las necesidades reales del sistema cambien."
+      },
+      "punto_de_inicio_recomendado": {
+        "momento": 1,
+        "nombre": "Modelar",
+        "razon": "El proyecto ya tiene definidas entidades importantes como usuarios, solicitudes, eventos, creadores y categorías, por lo que el siguiente paso natural es aprender a transformar esas necesidades del producto en un modelo documental razonado."
+      },
+      "regla_para_el_orientador": "Partir de los conocimientos confirmados, no repetir fundamentos innecesariamente, detectar lagunas mediante preguntas o ejercicios prácticos y avanzar únicamente cuando exista comprensión suficiente para tomar decisiones sobre el proyecto."
+    }
+  }
