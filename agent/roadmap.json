@@ -1,0 +1,240 @@
+{
+  "documento": 7,
+  "tipo": "roadmap_global",
+  "version": "1.0",
+  "descripcion": "Mapa que conecta todas las tecnologías del proyecto y su progreso de aprendizaje",
+  "tecnologias": [
+    {
+      "id": "node",
+      "nombre": "Node.js",
+      "carpeta": "node",
+      "descripcion": "Entorno de ejecución para JavaScript en el servidor",
+      "pertinencia_proyecto": "Base del backend, ejecutar el servidor",
+      "momentos": [
+        {
+          "numero": 1,
+          "nombre": "Fundamentos",
+          "temas": ["Qué es Node.js", "V8 engine", "npm init -y", "package.json", "node_modules"],
+          "estado": "pendiente"
+        },
+        {
+          "numero": 2,
+          "nombre": "Módulos y dependencias",
+          "temas": ["require/module.exports", "CommonJS", "instalación de paquetes"],
+          "estado": "pendiente"
+        },
+        {
+          "numero": 3,
+          "nombre": "Entorno y configuración",
+          "temas": ["dotenv", "variables de entorno", ".env"],
+          "estado": "pendiente"
+        }
+      ],
+      "conexion_con": ["express", "mongoose", "dotenv"]
+    },
+    {
+      "id": "dotenv",
+      "nombre": "dotenv",
+      "carpeta": "dotenv",
+      "descripcion": "Módulo para cargar variables de entorno desde archivos .env",
+      "pertinencia_proyecto": "Configuración segura de credenciales y puertos",
+      "momentos": [
+        {
+          "numero": 1,
+          "nombre": "Fundamentos",
+          "temas": ["Qué es dotenv", "Por qué se usa", "Archivo .env", "process.env"],
+          "estado": "pendiente"
+        },
+        {
+          "numero": 2,
+          "nombre": "Uso práctico",
+          "temas": ["Configuración de MongoDB URI", "Configuración de puerto", "Múltiples entornos"],
+          "estado": "pendiente"
+        }
+      ],
+      "conexion_con": ["node"]
+    },
+    {
+      "id": "express",
+      "nombre": "Express",
+      "carpeta": "express",
+      "descripcion": "Framework web minimalista para Node.js",
+      "pertinencia_proyecto": "Crear rutas, manejar peticiones HTTP, CORS",
+      "momentos": [
+        {
+          "numero": 1,
+          "nombre": "Fundamentos",
+          "temas": ["Qué es Express", "app.get()", "app.post()", "app.listen()"],
+          "estado": "pendiente"
+        },
+        {
+          "numero": 2,
+          "nombre": "Rutas y métodos HTTP",
+          "temas": ["Router", "GET/POST/PATCH/DELETE", "Parámetros de ruta", "Parámetros de consulta"],
+          "estado": "pendiente"
+        },
+        {
+          "numero": 3,
+          "nombre": "Middleware",
+          "temas": ["express.json()", "cors", "Middleware personalizado"],
+          "estado": "pendiente"
+        },
+        {
+          "numero": 4,
+          "nombre": "Arquitectura",
+          "temas": ["Separación de controladores", "Organización de rutas", "Manejo de errores"],
+          "estado": "pendiente"
+        }
+      ],
+      "conexion_con": ["node", "mongoose"]
+    },
+    {
+      "id": "mongoose",
+      "nombre": "Mongoose",
+      "carpeta": "mongoose",
+      "descripcion": "ODM (Object Data Modeling) para MongoDB y Node.js",
+      "pertinencia_proyecto": "Modelar datos, validar, conectar con MongoDB",
+      "momentos": [
+        {
+          "numero": 1,
+          "nombre": "Fundamentos",
+          "temas": ["Qué es Mongoose", "Schema vs Model", "Tipos de datos", "Conexión"],
+          "estado": "pendiente"
+        },
+        {
+          "numero": 2,
+          "nombre": "Modelado de datos",
+          "temas": ["Definición de schemas", "Referencias vs documentos embebidos", "Cardinalidad"],
+          "estado": "pendiente"
+        },
+        {
+          "numero": 3,
+          "nombre": "CRUD con Mongoose",
+          "temas": ["find(), create(), update(), delete()", "Métodos de query", "Populate()"],
+          "estado": "pendiente"
+        },
+        {
+          "numero": 4,
+          "nombre": "Validación",
+          "temas": ["required", "unique", "enum", "match", "min/max", "validadores personalizados"],
+          "estado": "pendiente"
+        },
+        {
+          "numero": 5,
+          "nombre": "Índices y rendimiento",
+          "temas": ["createIndex", "explain()", "Índices compuestos"],
+          "estado": "pendiente"
+        }
+      ],
+      "conexion_con": ["node", "express"]
+    },
+    {
+      "id": "mongodb",
+      "nombre": "MongoDB",
+      "carpeta": "bbdd",
+      "descripcion": "Base de datos NoSQL orientada a documentos",
+      "pertinencia_proyecto": "Almacenamiento principal de datos",
+      "momentos": [
+        {
+          "numero": 1,
+          "nombre": "Modelar",
+          "estado": "parcial"
+        },
+        {
+          "numero": 2,
+          "nombre": "Consultar",
+          "estado": "pendiente"
+        },
+        {
+          "numero": 3,
+          "nombre": "Tiempo",
+          "estado": "pendiente"
+        },
+        {
+          "numero": 4,
+          "nombre": "Rendimiento",
+          "estado": "parcial"
+        },
+        {
+          "numero": 5,
+          "nombre": "Agregar",
+          "estado": "pendiente"
+        },
+        {
+          "numero": 6,
+          "nombre": "Validar",
+          "estado": "parcial"
+        },
+        {
+          "numero": 7,
+          "nombre": "Administrar",
+          "estado": "pendiente"
+        },
+        {
+          "numero": 8,
+          "nombre": "Proteger",
+          "estado": "pendiente"
+        },
+        {
+          "numero": 9,
+          "nombre": "Recuperar",
+          "estado": "pendiente"
+        },
+        {
+          "numero": 10,
+          "nombre": "Observar",
+          "estado": "pendiente"
+        },
+        {
+          "numero": 11,
+          "nombre": "Dimensionar",
+          "estado": "pendiente"
+        },
+        {
+          "numero": 12,
+          "nombre": "Evolucionar",
+          "estado": "pendiente"
+        }
+      ],
+      "conexion_con": ["mongoose"]
+    }
+  ],
+  "orden_de_aprendizaje_recomendado": [
+    {
+      "fase": 1,
+      "nombre": "Configuración inicial",
+      "tecnologias": ["node", "dotenv"],
+      "justificacion": "Primero entender el entorno y la configuración"
+    },
+    {
+      "fase": 2,
+      "nombre": "Backend básico",
+      "tecnologias": ["express"],
+      "justificacion": "Crear el servidor y rutas básicas"
+    },
+    {
+      "fase": 3,
+      "nombre": "Conexión a base de datos",
+      "tecnologias": ["mongoose"],
+      "justificacion": "Conectar el backend con MongoDB"
+    },
+    {
+      "fase": 4,
+      "nombre": "Integración completa",
+      "tecnologias": ["node", "express", "mongoose", "mongodb"],
+      "justificacion": "Combinar todo en el proyecto"
+    }
+  ],
+  "dependencias": {
+    "node": [],
+    "dotenv": ["node"],
+    "express": ["node"],
+    "mongoose": ["node"],
+    "mongodb": ["mongoose"]
+  },
+  "notas": {
+    "criterio_de_seleccion": "Cada tema se estudia cuando el proyecto lo requiere",
+    "flexibilidad": "Se puede saltar entre temas si es necesario para comprender el momento actual",
+    "referencia_rapida": "Consultar la carpeta de cada tecnología para detalles específicos"
+  }
+}

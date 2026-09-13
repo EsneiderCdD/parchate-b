@@ -1,0 +1,101 @@
+{
+  "tecnologia": "Express",
+  "carpeta": "express",
+  "version": "1.0",
+  "descripcion": "Framework web minimalista para Node.js",
+  "momentos": [
+    {
+      "numero": 1,
+      "nombre": "Fundamentos",
+      "conceptos_clave": [
+        "Express es un framework web para Node.js",
+        "Proporciona una API para crear servidores HTTP",
+        "Minimalista: funcionalidad core pequeña, extensible con middleware",
+        "El más popular en el ecosistema Node.js"
+      ],
+      "comandos_esenciales": [
+        "const express = require('express')",
+        "const app = express()",
+        "app.listen(port)",
+        "app.get(path, handler)"
+      ],
+      "ejemplo_practico": {
+        "descripcion": "En mern-b, app.js crea el servidor Express",
+        "codigo": "const express = require('express');\nconst app = express();\napp.listen(process.env.PORT);"
+      },
+      "estado": "pendiente"
+    },
+    {
+      "numero": 2,
+      "nombre": "Rutas y métodos HTTP",
+      "conceptos_clave": [
+        "GET: Obtener datos",
+        "POST: Crear datos",
+        "PATCH: Actualizar datos parcialmente",
+        "DELETE: Eliminar datos",
+        "Router: Organizar rutas en módulos"
+      ],
+      "comandos_esenciales": [
+        "app.get('/path', handler)",
+        "app.post('/path', handler)",
+        "app.patch('/path/:id', handler)",
+        "app.delete('/path/:id', handler)"
+      ],
+      "ejemplo_practico": {
+        "descripcion": "En mern-b, router.js define las rutas /personas",
+        "codigo": "router.get('/personas', getPersonas);\nrouter.post('/personas', postPersonas);"
+      },
+      "estado": "pendiente"
+    },
+    {
+      "numero": 3,
+      "nombre": "Middleware",
+      "conceptos_clave": [
+        "Middleware: funciones que se ejecutan antes del handler",
+        "express.json(): parsear JSON del body",
+        "cors(): habilitar CORS",
+        "Middleware personalizado: funciones con req, res, next"
+      ],
+      "comandos_esenciales": [
+        "app.use(express.json())",
+        "app.use(cors())",
+        "app.use(middleware)"
+      ],
+      "ejemplo_practico": {
+        "descripcion": "En mern-b, app.js usa middleware para JSON y CORS",
+        "codigo": "app.use(cors());\napp.use(express.json());"
+      },
+      "estado": "pendiente"
+    },
+    {
+      "numero": 4,
+      "nombre": "Arquitectura",
+      "conceptos_clave": [
+        "Separación de controladores (lógica de negocio)",
+        "Organización de rutas (endpoints)",
+        "Manejo de errores (try/catch, middleware de error)",
+        "Patrón MVC (Model-View-Controller)"
+      ],
+      "comandos_esenciales": [
+        "router.get('/path', controller.function)",
+        "try/catch en controladores",
+        "res.status(200).json(data)"
+      ],
+      "ejemplo_practico": {
+        "descripcion": "En mern-b, hay separación entre router.js y controller.js",
+        "codigo": "router.get('/personas', getPersonas);\n// En controller.js:\nasync function getPersonas(req, res) { ... }"
+      },
+      "estado": "pendiente"
+    }
+  ],
+  "conexion_con_el_proyecto": {
+    "rol": "Framework del backend",
+    "ejemplo_en_mern_b": "app.js configura Express, router.js define rutas, controller.js maneja lógica",
+    "momento_actual": "Fase 2 - Backend básico"
+  },
+  "progreso": {
+    "momentos_completados": [],
+    "momentos_en_progreso": [],
+    "siguiente_momento": "Fundamentos"
+  }
+}

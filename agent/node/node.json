@@ -1,0 +1,66 @@
+{
+  "tecnologia": "Node.js",
+  "carpeta": "node",
+  "version": "1.0",
+  "descripcion": "Entorno de ejecución para JavaScript en el servidor",
+  "momentos": [
+    {
+      "numero": 1,
+      "nombre": "Fundamentos",
+      "conceptos_clave": [
+        "Node.js no es un lenguaje, es un entorno de ejecución",
+        "Utiliza el motor V8 de Google Chrome",
+        "Permite ejecutar JavaScript fuera del navegador",
+        "Orientado a operaciones de E/S no bloqueantes"
+      ],
+      "comandos_esenciales": [
+        "node -v (versión de Node)",
+        "npm init -y (inicializar proyecto)",
+        "npm install (instalar dependencias)",
+        "npm install paquete (instalar un paquete)"
+      ],
+      "estado": "pendiente"
+    },
+    {
+      "numero": 2,
+      "nombre": "Módulos y dependencias",
+      "conceptos_clave": [
+        "CommonJS (require/module.exports)",
+        "package.json (manifiesto del proyecto)",
+        "node_modules (carpeta de dependencias)",
+        "package-lock.json (versiones exactas)"
+      ],
+      "comandos_esenciales": [
+        "require('modulo')",
+        "module.exports = objeto",
+        "npm install paquete (agregar dependencia)",
+        "npm install -D paquete (dependencia de desarrollo)"
+      ],
+      "estado": "pendiente"
+    },
+    {
+      "numero": 3,
+      "nombre": "Entorno y configuración",
+      "conceptos_clave": [
+        "process.env (acceso a variables de entorno)",
+        "dotenv (cargar variables desde .env)",
+        "Entornos: desarrollo, producción"
+      ],
+      "comandos_esenciales": [
+        "require('dotenv').config()",
+        "process.env.NOMBRE_VARIABLE"
+      ],
+      "estado": "pendiente"
+    }
+  ],
+  "conexion_con_el_proyecto": {
+    "rol": "Base del backend",
+    "ejemplo_en_mern_b": "app.js usa require() para importar módulos, connectDB y router",
+    "momento_actual": "Fase 1 - Configuración inicial"
+  },
+  "progreso": {
+    "momentos_completados": [],
+    "momentos_en_progreso": [],
+    "siguiente_momento": "Fundamentos"
+  }
+}

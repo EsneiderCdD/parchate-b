@@ -1,0 +1,117 @@
+{
+  "tecnologia": "Mongoose",
+  "carpeta": "mongoose",
+  "version": "1.0",
+  "descripcion": "ODM (Object Data Modeling) para MongoDB y Node.js",
+  "momentos": [
+    {
+      "numero": 1,
+      "nombre": "Fundamentos",
+      "conceptos_clave": [
+        "Mongoose es un ODM (Object Data Modeling)",
+        "Define la estructura de los documentos con Schemas",
+        "Los Schemas se convierten en Models",
+        "Los Models se usan para CRUD en MongoDB"
+      ],
+      "comandos_esenciales": [
+        "const mongoose = require('mongoose')",
+        "new mongoose.Schema({})",
+        "mongoose.model('Modelo', schema)",
+        "mongoose.connect(uri)"
+      ],
+      "ejemplo_practico": {
+        "descripcion": "En mern-b, model/Persona.js define un Schema y Model",
+        "codigo": "const personaSchema = new mongoose.Schema({\n  nombre: String,\n  edad: Number\n});\nconst Persona = mongoose.model('Persona', personaSchema);"
+      },
+      "estado": "pendiente"
+    },
+    {
+      "numero": 2,
+      "nombre": "Modelado de datos",
+      "conceptos_clave": [
+        "Schema: define la forma de los documentos",
+        "Types: String, Number, Date, Boolean, Array, Object, ObjectId",
+        "Referencias: relaciones entre colecciones",
+        "Documentos embebidos: datos anidados dentro de un documento"
+      ],
+      "comandos_esenciales": [
+        "type: String",
+        "type: mongoose.Schema.Types.ObjectId",
+        "ref: 'ModeloReferencia'"
+      ],
+      "ejemplo_practico": {
+        "descripcion": "En mern-b, el Schema de Persona tiene campos como fecha, nombre, imagen",
+        "codigo": "const personaSchema = new mongoose.Schema({\n  fecha: Date,\n  nombre: String,\n  imagen: String,\n  edad: Number,\n  amigos: Array,\n  gustos: Object\n});"
+      },
+      "estado": "pendiente"
+    },
+    {
+      "numero": 3,
+      "nombre": "CRUD con Mongoose",
+      "conceptos_clave": [
+        "find(): buscar documentos",
+        "create(): crear documentos",
+        "findByIdAndUpdate(): actualizar por ID",
+        "findByIdAndDelete(): eliminar por ID",
+        "save(): guardar documento"
+      ],
+      "comandos_esenciales": [
+        "Model.find()",
+        "Model.create(data)",
+        "Model.findByIdAndUpdate(id, data, {new: true})",
+        "Model.findByIdAndDelete(id)",
+        "documento.save()"
+      ],
+      "ejemplo_practico": {
+        "descripcion": "En mern-b, controller.js implementa CRUD completo",
+        "codigo": "const info = await Persona.find();\nconst nuevo = new Persona(req.body);\nawait nuevo.save();\nawait Persona.findByIdAndUpdate(id, req.body, {new: true});"
+      },
+      "estado": "pendiente"
+    },
+    {
+      "numero": 4,
+      "nombre": "Validación",
+      "conceptos_clave": [
+        "required: campo obligatorio",
+        "unique: valor único",
+        "enum: valores permitidos",
+        "match: expresión regular",
+        "min/max: valores mínimo/máximo",
+        "Validadores personalizados"
+      ],
+      "comandos_esenciales": [
+        "{ type: String, required: true }",
+        "{ type: String, unique: true }",
+        "{ type: String, enum: ['a', 'b'] }",
+        "{ type: String, match: /regex/ }"
+      ],
+      "estado": "pendiente"
+    },
+    {
+      "numero": 5,
+      "nombre": "Índices y rendimiento",
+      "conceptos_clave": [
+        "Índices: aceleran las consultas",
+        "explain(): analizar rendimiento de consultas",
+        "Índices simples vs compuestos",
+        "Cuándo crear un índice"
+      ],
+      "comandos_esenciales": [
+        "schema.index({ campo: 1 })",
+        "Model.find().explain('executionStats')",
+        "db.collection.createIndex({campo: 1})"
+      ],
+      "estado": "pendiente"
+    }
+  ],
+  "conexion_con_el_proyecto": {
+    "rol": "Modelado y conexión a MongoDB",
+    "ejemplo_en_mern_b": "model/Persona.js define el Schema, controller.js usa los métodos de Mongoose",
+    "momento_actual": "Fase 3 - Conexión a base de datos"
+  },
+  "progreso": {
+    "momentos_completados": [],
+    "momentos_en_progreso": [],
+    "siguiente_momento": "Fundamentos"
+  }
+}

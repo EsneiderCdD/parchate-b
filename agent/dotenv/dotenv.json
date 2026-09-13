@@ -1,0 +1,53 @@
+{
+  "tecnologia": "dotenv",
+  "carpeta": "dotenv",
+  "version": "1.0",
+  "descripcion": "Módulo para cargar variables de entorno desde archivos .env",
+  "momentos": [
+    {
+      "numero": 1,
+      "nombre": "Fundamentos",
+      "conceptos_clave": [
+        "dotenv carga variables de entorno desde un archivo .env",
+        "Las variables de entorno son pares clave=valor",
+        "Se usan para configuración sensible (credenciales, puertos)",
+        "El archivo .env nunca se sube a repositorios"
+      ],
+      "comandos_esenciales": [
+        "require('dotenv').config()",
+        "process.env.NOMBRE_VARIABLE"
+      ],
+      "ejemplo_practico": {
+        "descripcion": "En mern-b, el archivo .env contiene PORT y MONGO",
+        "codigo": "require('dotenv').config();\nconst port = process.env.PORT;\nconst mongoUri = process.env.MONGO;"
+      },
+      "estado": "pendiente"
+    },
+    {
+      "numero": 2,
+      "nombre": "Uso práctico",
+      "conceptos_clave": [
+        "PORT: Puerto del servidor",
+        "MONGO: URI de conexión a MongoDB",
+        "NODE_ENV: Entorno (development/production)",
+        "Múltiples archivos .env para diferentes entornos"
+      ],
+      "comandos_esenciales": [
+        "PORT=3000",
+        "MONGO=mongodb://localhost:27017/personaje",
+        "NODE_ENV=development"
+      ],
+      "estado": "pendiente"
+    }
+  ],
+  "conexion_con_el_proyecto": {
+    "rol": "Configuración segura",
+    "ejemplo_en_mern_b": "Archivo .env con PORT=3000 y MONGO=mongodb://localhost:27017/personaje",
+    "momento_actual": "Fase 1 - Configuración inicial"
+  },
+  "progreso": {
+    "momentos_completados": [],
+    "momentos_en_progreso": [],
+    "siguiente_momento": "Fundamentos"
+  }
+}
